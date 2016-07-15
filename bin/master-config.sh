@@ -18,7 +18,8 @@ sudo apt-get -y install git \
 htop \
 wget \
 iptraf \
-dialog 
+dialog \
+toilet 
 
 # Install NTP client (should read NTP from OpenWRT)
 sudo apt-get -y install ntp
