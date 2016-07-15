@@ -1,0 +1,13 @@
+--- /usr/share/perl/5.22/VMware/VICommon.pm.orig	2016-07-14 16:53:21.024519943 +0200
++++ /usr/share/perl/5.22/VMware/VICommon.pm	2016-07-14 16:54:08.860479302 +0200
+@@ -2328,8 +2328,8 @@
+ sub get_session_loaded {
+    my $self = shift;
+    my $user_agent = $self->{user_agent};
+-   return defined $user_agent->cookie_jar and 
+-                  $user_agent->cookie_jar->as_string ne '';
++   return (defined $user_agent->cookie_jar and 
++                  $user_agent->cookie_jar->as_string ne '');
+ }
+ 
+ 
